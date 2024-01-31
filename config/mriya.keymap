@@ -18,15 +18,31 @@
 &mt { quick_tap_ms = <200>; };
 
 / {
+    behaviors {
+        td_cl: td_cl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CL";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp LC(LEFT)>;
+        };
+
+        td_cr: td_cr {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CR";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp LC(RIGHT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-  &mt LGUI RBKT       &kp Q  &kp W      &kp E                 &kp R      &kp T        &kp Y     &kp U         &kp I                &kp O      &kp P     &mt RGUI LBKT
-  &mt LCTRL GRAVE     &kp A  &kp S      &kp D                 &kp F      &kp G        &kp H     &kp J         &kp K                &kp L      &kp SEMI  &mt RCTRL SQT
-  &mt LEFT_ALT MINUS  &kp Z  &kp X      &kp C                 &kp V      &kp B        &kp N     &kp M         &kp COMMA            &kp DOT    &kp FSLH  &mt RALT BSLH
-                             &lt 2 TAB  &mt LEFT_SHIFT SPACE  &lt 1 RET  &kp RIGHT    &kp LEFT  &lt 1 ESCAPE  &mt RSHFT BACKSPACE  &lt 2 DEL
+  &mt LGUI RBKT       &kp Q  &kp W      &kp E                 &kp R      &kp T     &kp Y   &kp U         &kp I                &kp O      &kp P     &mt RGUI LBKT
+  &mt LCTRL GRAVE     &kp A  &kp S      &kp D                 &kp F      &kp G     &kp H   &kp J         &kp K                &kp L      &kp SEMI  &mt RCTRL SQT
+  &mt LEFT_ALT MINUS  &kp Z  &kp X      &kp C                 &kp V      &kp B     &kp N   &kp M         &kp COMMA            &kp DOT    &kp FSLH  &mt RALT BSLH
+                             &lt 2 TAB  &mt LEFT_SHIFT SPACE  &lt 1 RET  &td_cr    &td_cl  &lt 1 ESCAPE  &mt RSHFT BACKSPACE  &lt 2 DEL
             >;
         };
 
