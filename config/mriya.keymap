@@ -32,6 +32,60 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp LC(RIGHT)>;
         };
+
+        td_sm: td_sm {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SM";
+            #binding-cells = <0>;
+            bindings = <&kp K_MUTE>, <&kp LC(LS(A))>;
+        };
+
+        td_dots: td_dots {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_DOTS";
+            #binding-cells = <0>;
+            bindings = <&kp KP_DOT>, <&kp SEMICOLON>, <&kp LS(SEMICOLON)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        l_br {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <18 19>;
+            layers = <2>;
+        };
+
+        eq {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <30 31>;
+            layers = <2>;
+        };
+
+        r_br {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <21 22>;
+            layers = <2>;
+        };
+
+        l_sq_br {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <6 7>;
+            layers = <2>;
+        };
+
+        r_sq_br {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <9 10>;
+            layers = <2>;
+        };
+
+        f_for {
+            bindings = <&kp F4>;
+            key-positions = <10 11>;
+            layers = <2>;
+        };
     };
 
     keymap {
@@ -57,10 +111,10 @@
 
         raise_layer {
             bindings = <
-  &mt LEFT_GUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOLUME_UP  &kp HOME          &kp PAGE_DOWN     &kp PAGE_UP           &kp END            &kp CAPS
-  &mt LCTRL EQUAL      &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE       &kp LEFT_ARROW    &kp DOWN          &kp UP_ARROW          &kp RIGHT          &mt RCTRL PAUSE_BREAK
-  &trans               &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN     &kp LC(RS(LEFT))  &kp LC(LS(DOWN))  &kp LC(LS(UP_ARROW))  &kp LS(LC(RIGHT))  &mt RIGHT_ALT PRINTSCREEN
-                                        &trans     &trans     &trans     &lt 3 RETURN    &lt 3 ESCAPE     &trans            &trans            &trans
+  &kp CAPS                  &kp HOME          &kp PAGE_DOWN     &kp PAGE_UP           &kp END            &kp C_VOLUME_UP    &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_SLASH     &kp CAPS
+  &mt LCTRL PAUSE_BREAK     &kp LEFT_ARROW    &kp DOWN          &kp UP_ARROW          &kp RIGHT          &td_sm             &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY  &mt RCTRL KP_EQUAL
+  &mt LEFT_ALT PRINTSCREEN  &kp LC(LS(LEFT))  &kp LC(LS(DOWN))  &kp LC(LS(UP_ARROW))  &kp LC(LS(RIGHT))  &kp C_VOL_DN       &td_dots      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0        &trans
+                                              &trans            &trans                &trans             &lt 3 RETURN       &lt 3 ESCAPE  &trans     &trans     &trans
             >;
         };
 
