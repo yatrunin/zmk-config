@@ -58,7 +58,7 @@
         };
 
         eq {
-            bindings = <&kp KP_EQUAL>;
+            bindings = <&kp EQUAL>;
             key-positions = <30 31>;
             layers = <2>;
         };
