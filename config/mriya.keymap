@@ -113,7 +113,7 @@
             bindings = <
   &kp CAPS                  &kp HOME          &kp PAGE_DOWN     &kp PAGE_UP           &kp END            &kp C_VOLUME_UP    &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_SLASH     &mt RIGHT_GUI KP_NLCK
   &mt LCTRL PAUSE_BREAK     &kp LEFT_ARROW    &kp DOWN          &kp UP_ARROW          &kp RIGHT          &td_sm             &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY  &mt RCTRL EQUAL
-  &mt LEFT_ALT PRINTSCREEN  &kp LC(LS(LEFT))  &kp LC(LS(DOWN))  &kp LC(LS(UP_ARROW))  &kp LC(LS(RIGHT))  &kp C_VOL_DN       &td_dots      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0        &trans
+  &mt LEFT_ALT PRINTSCREEN  &kp LC(LS(LEFT))  &kp LC(LS(DOWN))  &kp LC(LS(UP_ARROW))  &kp LC(LS(RIGHT))  &kp C_VOL_DN       &kp KP_N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &td_dots         &trans
                                               &trans            &trans                &trans             &lt 3 RETURN       &lt 3 ESCAPE  &trans     &trans     &trans
             >;
         };
