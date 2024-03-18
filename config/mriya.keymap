@@ -93,10 +93,10 @@
 
         default_layer {
             bindings = <
-  &mt LGUI RBKT       &kp Q  &kp W   &kp E      &kp R             &kp T           &kp Y         &kp U                 &kp I         &kp O    &kp P     &mt RGUI LBKT
-  &mt LCTRL GRAVE     &kp A  &kp S   &kp D      &kp F             &kp G           &kp H         &kp J                 &kp K         &kp L    &kp SEMI  &mt RCTRL SQT
-  &mt LEFT_ALT MINUS  &kp Z  &kp X   &kp C      &kp V             &kp B           &kp N         &kp M                 &kp COMMA     &kp DOT  &kp FSLH  &mt RALT BSLH
-                             &td_cl  &lt 2 TAB  &mt LSHIFT SPACE  &lt 1 RETURN    &lt 1 ESCAPE  &mt RSHIFT BACKSPACE  &lt 2 DELETE  &td_cr
+  &mt LGUI RBKT       &kp Q           &kp W           &kp E        &kp R             &kp T           &kp Y         &kp U                 &kp I                &kp O            &kp P                    &mt RGUI LBKT
+  &mt LCTRL GRAVE     &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G           &kp H         &mt RIGHT_SHIFT J     &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &mt RCTRL SQT
+  &mt LEFT_ALT MINUS  &kp Z           &kp X           &kp C        &kp V             &kp B           &kp N         &kp M                 &kp COMMA            &kp DOT          &kp FSLH                 &mt RALT BSLH
+                                      &td_cl          &lt 2 TAB    &mt LSHIFT SPACE  &lt 1 RETURN    &lt 1 ESCAPE  &mt RSHIFT BACKSPACE  &lt 2 DELETE         &td_cr
             >;
         };
 
