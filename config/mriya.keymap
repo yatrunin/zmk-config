@@ -92,6 +92,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        t2 {
+            bindings = <&tog 2>;
+            key-positions = <36 43>;
+        };
     };
 
     keymap {
