@@ -47,6 +47,17 @@
             #binding-cells = <0>;
             bindings = <&kp KP_DOT>, <&kp SEMICOLON>, <&kp LS(SEMICOLON)>;
         };
+
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
