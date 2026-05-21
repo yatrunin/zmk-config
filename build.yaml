@@ -1,5 +1,8 @@
 include:
   - board: mriya_left
+    artifact-name: mriya_left
   - board: mriya_right
-  - board: nice_nano_v2
+    artifact-name: mriya_right
+  - board: nice_nano
     shield: settings_reset
+    artifact-name: prospector
