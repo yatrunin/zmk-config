@@ -6,7 +6,7 @@
 
 - Левая половина: `mriya_left`
 - Правая половина: `mriya_right`
-- Донгл Prospector: официальная плата `nice_nano` + щит `settings_reset`
+- Донгл Prospector: официальная плата `nice_nano//zmk` + щит `settings_reset`
 
 ## Как работает сборка
 
