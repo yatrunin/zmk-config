@@ -1,0 +1,7 @@
+/*
+ * SPDX-License-Identifier: MIT
+ *
+ * Prospector keymap: reuses the Mriya layout so the dongle has identical mapping.
+ */
+
+#include "../../../mriya.keymap"
