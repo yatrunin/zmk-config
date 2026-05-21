@@ -3,6 +3,6 @@ include:
     artifact-name: mriya_left
   - board: mriya_right
     artifact-name: mriya_right
-  - board: nice_nano/nrf52840/zmk
+  - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: prospector
